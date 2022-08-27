@@ -2,6 +2,9 @@ from asyncio import windows_events
 import pygame
 from pygame import *
 pygame.init()
+pygame.display.set_caption('Self Driving car')
+Icon = pygame.image.load('car.png')
+pygame.display.set_icon(Icon)
 window = pygame.display.set_mode((1200, 400))
 track = pygame.image.load("road.png")
 car = pygame.image.load("car.png")
